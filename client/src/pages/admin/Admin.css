@@ -1,0 +1,40 @@
+.container-admin {
+    height: auto;
+    width: 100vw;
+    padding: 20px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(216, 216, 216);
+}
+
+.card-admin {
+    height: 300px;
+    width: 300px; 
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    transition: background-color 0.3s ease; /* Para qualquer mudança no card */
+}
+
+.highlight {
+    background-color: yellow; /* Cor de destaque */
+    color: red; /* Mudança da cor do texto para destacar também */
+    font-weight: bold; /* Negrito para realçar a data */
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.feedback-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Cor de fundo clara */
+    color: #007bff; /* Cor do texto */
+    border: 1px solid #007bff; /* Borda azul */
+}

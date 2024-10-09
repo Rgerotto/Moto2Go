@@ -1,0 +1,120 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: black;
+  z-index: 1;
+}
+.logo-nav {
+  height: 100%;
+}
+.menu {
+  display: none;
+}
+.closebtn {
+  display: none;
+}
+.overlay {
+  width: 40%;
+  display: flex;
+}
+
+.overlay-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 1;
+}
+.overlay-content a {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+@media (max-width:768px){
+  nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .menu {
+    font-size: 40px;
+    display: block;
+    color: #f1f1f1;
+  }
+  .closebtn {
+    display: block;
+  }
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #5d5a5a;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
