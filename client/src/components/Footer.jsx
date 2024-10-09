@@ -35,6 +35,7 @@ function Footer() {
                             <p>telefono: +34611788889</p>
                             <p>email: email@email.com</p>
                         </div>
+                        
                         <div className="donde">
                             <p className='ubicacion'>Plaça de l'Estació, 08860 Castelldefels, Barcelona</p>
                             <p>telefono: +34611788889</p>

@@ -157,6 +157,11 @@ footer {
       justify-content: center;
       align-items: center;
   }
+  .donde:first-child{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+}
   .hora-trabajo{
       margin-top: 1rem;
   }
