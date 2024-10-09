@@ -46,6 +46,9 @@ function Nav() {
           <Link to="/contact">
             <p>contacto</p>
           </Link>
+          <Link to="/moto2go/admin">
+            <p>admin</p>
+          </Link>
         </div>
       </div>
     </nav>
