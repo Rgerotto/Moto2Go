@@ -40,9 +40,6 @@ function Nav() {
           <Link to="/about">
             <p>Sobre</p>
           </Link>
-{/*           <Link to='/cliente'>
-          <p>cliente</p>
-          </Link> */}
           <Link to="/contact">
             <p>contacto</p>
           </Link>
