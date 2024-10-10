@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Admin.css';
 
+const baseURL = 'https://moto2go-server.vercel.app/'
+
 const AdminPage = () => {
     const [motorcycles, setMotorcycles] = useState([]);
     const [newMotorcycle, setNewMotorcycle] = useState({
@@ -17,7 +19,7 @@ const AdminPage = () => {
     // Função para buscar motocicletas
     const fetchMotorcycles = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/motorcycles');
+            const response = await fetch(`${baseURL}/api/motorcycles`);
             const data = await response.json();
             console.log("fetch para admin:", data);
             setMotorcycles(data);

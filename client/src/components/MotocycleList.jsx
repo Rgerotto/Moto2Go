@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './motorcycleList.css';
 
+const baseURL = 'https://moto2go-server.vercel.app/'
+
 const MotorcycleList = () => {
   const [motorcycles, setMotorcycles] = useState([]);
   const [selectedDates, setSelectedDates] = useState({});
@@ -10,7 +12,7 @@ const MotorcycleList = () => {
   const [currentMotorcycle, setCurrentMotorcycle] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/motorcycles')
+    fetch(`${baseURL}/api/motorcycles`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status ${response.status}`);
@@ -40,7 +42,7 @@ const MotorcycleList = () => {
       endDate: selected.endDate.toISOString(),
     };
 
-    fetch('http://localhost:3000/api/reservas', {
+    fetch(`${baseURL}/api/reservas`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
