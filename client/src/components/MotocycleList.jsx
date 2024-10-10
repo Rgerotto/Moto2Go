@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './motorcycleList.css';
 
-const baseURL = 'https://moto2go-server.vercel.app/'
+const baseURL = 'http://localhost:3000'
 
 const MotorcycleList = () => {
   const [motorcycles, setMotorcycles] = useState([]);
